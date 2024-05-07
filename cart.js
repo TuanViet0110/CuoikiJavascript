@@ -10,6 +10,11 @@ function removeFromCart(index) {
     renderCart();
 }
 
+function clearCart() {
+    cart = [];
+    renderCart();
+}
+
 function renderCart() {
     const cartContainer = document.getElementById('cart');
     cartContainer.innerHTML = '';
